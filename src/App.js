@@ -45,14 +45,14 @@ export default class App extends Component {
   render() {
     return (
       <div>
-        <div className='wapper'>
+        <div className='wrapper'>
           <div className='main'>
             <div className='container'>
               <div className='row'>
-                <div className='col-xs-5 title-container'>
+                <div className='col-5 title-container'>
                   <Titles />
                 </div>
-                <div className='col-xs-7 form-container'>
+                <div className='col-7 form-container'>
                   <Form getWeather={this.getWeather} />
                   <Weather
                     temperature={this.state.temperature}
