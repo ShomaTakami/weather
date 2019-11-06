@@ -22,9 +22,9 @@ export default class App extends Component {
     );
     const data = await api_call.json();
     if (city && country) {
-      // console.log(data);
+      console.log(data);
       this.setState({
-        temperature: data.main.temp,
+        temperature: Math.round(data.main.temp - 273.15),
         city: data.name,
         country: data.sys.country,
         humidity: data.main.humidity,
