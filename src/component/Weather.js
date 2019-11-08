@@ -6,6 +6,7 @@ const Weather = props => {
       {props.city && props.country && (
         <p className='weather__key'>
           Location:
+          <br />
           <span className='weather__value'>
             {props.city},{props.country}
           </span>
@@ -13,18 +14,20 @@ const Weather = props => {
       )}
       {props.temperature && (
         <p className='weather__key'>
-          Temperature:{" "}
+          Temperature: <br />
           <span className='weather__value'>{props.temperature}</span>
         </p>
       )}
       {props.humidity && (
         <p className='weather__key'>
-          Humidity: <span className='weather__value'>{props.humidity}</span>
+          Humidity: <br />
+          <span className='weather__value'>{props.humidity}</span>
         </p>
       )}
       {props.description && (
         <p className='weather__key'>
-          Condtions: <span className='weather__value'>{props.description}</span>
+          Condtions: <br />
+          <span className='weather__value'>{props.description}</span>
         </p>
       )}
       {props.error && <p className='weather__error'>{props.error}</p>}
